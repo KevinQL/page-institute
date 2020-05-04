@@ -1,5 +1,5 @@
 body{
-    background:rgb(0, 96, 134);
+    background:rgb(255, 254, 254);
 }
 
 /*---img*/
@@ -8,13 +8,17 @@ body{
 }
 
 /*----nav---*/
-.fondo-header{    
+.fondo-header-elimin{    
     height: 100%;
     background-image: url(../img/waves-shape.svg);        
-    background-repeat: no-repeat;
-    
-    background-size: contain;
+    background-repeat: no-repeat;       
+    background-size: cover;
+    background-color: teal;
     /*background-size: cover;*/
+}
+
+.mt-slider{
+    margin: 100px;
 }
 /*-*/
 .nav-head{
@@ -65,13 +69,145 @@ body{
 
 }
 
-/*---------------adicionales ----------*/
-.vacio__1{
-    width: 100%;
-    height: 150px;
-    background-color: transparent;
+/*--------- section carreras --- */
+.img-carreras:hover{
+    background-color: tomato;    
+}
+.img-carreras:hover + p{
+    color: tomato!important;    
 }
 
 
+
+/*----- section cambias mundo*/
+.section-cambias{
+    background: linear-gradient(90deg,#435ea2 15%,#435ea2 30%,#435ea2 60%,#435ea2);
+    
+}
+
+.div-img-student{
+    background-image: url(../img/nf.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.texto-cambias{
+    padding: 100px;
+}
+
+
+/*-------- seccion blog------*/
+.contenedor-blog{
+    background: #487aba;
+}
+
+.seccion-blog{
+    background: transparent;
+}
+.seccion-blog__img{
+    width: 100%;
+    height: 150px;
+    border: 4px solid white;
+}
+.seccion-blog__texto{
+    width: 90%;
+    padding: 10px;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    position: relative;
+    top:-35px;
+}
+
+
+
+/*-------- seccion novedades ----- */
+.novedades{
+    margin-bottom: 50px;
+}
+
+.novedades__btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 27px 75px;
+    margin-right: 20px;
+    background: red;
+    border-radius: 7px;
+    
+    color: aliceblue;
+    font-weight: bold;    
+}
+
+.novedades__btn:hover{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.novedades__btn-f{
+    background: #3b5999;
+}
+.novedades__btn-i{
+    background: #e4405f;
+}
+.novedades__btn-y{
+    background: #cd201f;
+}
+
+
+
+
+/**---------- footer ---------------*/
+.footer-content{
+    overflow: hidden;
+    height: 200px;
+    position: relative;
+    
+}
+.footer-content__fondo-svg{
+    background: rgba(0, 88, 139, 0.712);    
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    transform: rotate(180deg);
+    position: absolute;
+    overflow: hidden;    
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.footer-content__info{
+
+}
+
+
+
+
+
+/*---------------adicionales ----------*/
+.vacio__1{
+    width: 100%;
+    height: 50px;
+    background-color: yellowgree;
+}
+
+
+
+
+
+/*--- eliminar ---- */
+.img-svg-1{
+    position: absolute;
+    top: -145px;    
+    background-color: transparent;
+    z-index: 1;
+}
+.img-svg-2{
+    position: absolute;
+    top: -500px;
+    background-color: transparent;
+    z-index: 1;
+}
 
 
