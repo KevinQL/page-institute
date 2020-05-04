@@ -1,0 +1,77 @@
+body{
+    background:rgb(0, 96, 134);
+}
+
+/*---img*/
+.img-logo{
+    position: absolute;
+}
+
+/*----nav---*/
+.fondo-header{    
+    height: 100%;
+    background-image: url(../img/waves-shape.svg);        
+    background-repeat: no-repeat;
+    
+    background-size: contain;
+    /*background-size: cover;*/
+}
+/*-*/
+.nav-head{
+    display: block;
+}
+
+.nav-head__ul{
+    background: transparent;
+}
+
+.nav-head__li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;       
+    font-size: 20px;
+}
+
+.nav-head__a{
+    text-decoration: none;    
+    color: aliceblue;
+
+}
+
+/*--- texto presentacion ----*/
+.txt-presentacion{
+    
+    color:white;
+    padding: 60px 0 100px 0;
+}
+.txt-presentacion__titulo{
+    font-weight: bold;
+    font-size: 3.2em;
+}
+.txt-presentacion__titulo-decorado{
+    background-color: yellowgreen;
+    /*hacer decorado rombo*/
+}
+
+/*--- texto presentacion licenciado ----*/
+.txt-licencia{
+       
+    padding-left: 70px;
+    color:white;
+}
+.txt-licencia__titulo{
+    color: whitesmoke;
+    font-size: 1em;    
+
+}
+
+/*---------------adicionales ----------*/
+.vacio__1{
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+}
+
+
+
+

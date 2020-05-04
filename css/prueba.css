@@ -1,0 +1,38 @@
+body{
+    background:rgb(0, 96, 134);
+}
+
+/*---img*/
+.img-logo{
+    position: absolute;
+}
+
+/*----nav---*/
+.fondo-header{    
+    height: 100%;
+    background-image: url(../img/waves-shape.svg);        
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*background-size: cover;*/
+}
+/*-*/
+.nav-head{
+    display: block;
+}
+
+.nav-head__ul{
+    background: transparent;
+}
+
+.nav-head__li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;       
+    font-size: 20px;
+}
+
+.nav-head__a{
+    text-decoration: none;    
+    color: aliceblue;
+
+}
