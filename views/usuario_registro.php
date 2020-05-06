@@ -20,12 +20,12 @@
        <div class="container">
            <div class="row">
                <div class="col-md-4 form-group">
-                    <h3>REGISTRO</h3>
+                    <h3 class="text-center text-muted lead">REGISTRAR USUARIO</h3>
                     <hr>
                     <input type="text" id="txt_user" class="form-control text-uppercase my-2" placeholder="INGRESE USUARIO">                     
                     <input type="password" id="txt_password" class="form-control text-uppercase my-2" placeholder="INGRESE PASSWORD"
                     > 
-                    <input type="submit" class="btn btn-primary btn-lg btn-block my-3" value="GUARDAR REGISTRO" onclick="execute_registroUsuario()">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block my-3" value="REGISTRARSE" onclick="execute_registroUsuario()">
                </div>
             </div>
             </div>

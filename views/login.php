@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    
     <?php
-        include_once("./views/modules/cdnsheader.html");
-    ?>    
-    <title>LOGIN</title>
-</head>
-<body id="particles-js">
+        include_once("views/modules/cdnsheader.html");
+    ?>
 
-    <div class="container">
-        <a href="?pg=usuario_registro">REGISTRARSE</a>
-        <h1>INICIAR SESIÓN</h1>
-        <form action="" class="card p-4 w-25">
-            <div class="form-group">
-                <label for="user">USUARIO</label> <br>
-                <input type="text" class="form-control" id="user">
-                <div class="valid-feedback">Bien! Campos llenos.</div>
-                <div class="invalid-feedback">Error! Llenar campo.</div>                
+    <title>INICIAR SESSION</title>
+</head>
+<body>
+
+    <!-- NAVEGACION -->
+    <?php
+        include_once("views/modules/navegacion_inicio.html");
+    ?>
+
+    <!-- contenido form-->
+    <div class="container my-3">        
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4 form-group">
+                    <h3 class="text-center lead text-muted">INICIAR SESSION</h3>
+                    <hr>
+                    <input type="text" id="txt_user" class="form-control text-uppercase my-2" placeholder="INGRESE USUARIO">                     
+                    <input type="password" id="txt_password" class="form-control text-uppercase my-2" placeholder="INGRESE PASSWORD"
+                    > 
+                    <input type="submit" class="btn btn-primary btn-lg btn-block my-3" value="INICIAR SESSION" onclick="execute_registroUsuario()">
+                    
+                    <a href="?pg=usuario_registro">registrarse</a>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="password">CONTRASEÑA</label> <br>
-                <input type="password" class="form-control" id="password">
-                <div class="valid-feedback">Bien! Campos llenos.</div>
-                <div class="invalid-feedback">Error! Llenar campo.</div>
             </div>
-            <div class="form-group">
-                <button class="btn btn-success btn-lg btn-block my-4" id="btn-ingresar">INGRESAR</button>
-            </div>
-        </form>    
     </div>
 
-
-
-
-    <?php
-        include_once("./views/modules/cdnsfooter.html");
+    
+    <?php        
+        include_once("views/modules/cdnsfooter.html");        
     ?>
 
 </body>

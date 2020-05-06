@@ -79,8 +79,7 @@ function evalSesion() {
 
 //****************************************************************************************** */
 //****************************************************************************************** */
-//****************************************************************************************** */
-
+//------------------ REGISTRO DE USUARIO ------------------------------
 /**
  *  
  */
@@ -120,14 +119,19 @@ function execute_registroUsuario(){
     if(eval_registroUsuario()){
         let dataHTML = dataHTML_registroUsuario();
         let {txt_userv, txt_passwordv} = dataHTML.value;
+        let {txt_user, txt_password} = dataHTML.element;
 
         fetchKev('POST',{
             id:'itec',
             txt_userv,
             txt_passwordv           
-        },data=>{         
-            console.log(data)   
-            sweetModalMin('server request','center',1200,'success')
+        },data=>{                     
+            if(data.eval){
+                sweetModalMin('operación exitosa!','top-start',1200,'success')
+                cleanInputs([txt_user, txt_password])
+            }else{
+                sweetModalMin('error en operacion!','top-start',1200,'warning')
+            }
         },URL_AJAX_PROCESAR)
 
     }else{
@@ -136,13 +140,44 @@ function execute_registroUsuario(){
 }
 
 //-- FUNCIONES DE OPERACION
+
+
+//****************************************************************************************** */
+//****************************************************************************************** */
+//------------------ LOGUIN DE USUARIO ------------------------------
+/**
+ *  
+ */
+function dataHTML_loginUser(){
+    let txt_user = document.querySelector("#");
+    let txt_password = document.querySelector("#");
+
+    return {
+        element:{
+            txt_user,
+            txt_password
+        },
+        value:{      
+            txt_userv: txt_user.value.trim().toLowerCase(), 
+            txt_passwordv: txt_password.value.trim().toLowerCase()
+        }
+    }
+}
 /**
  * 
  */
-function action_registroUsuario_saludarUsuario(nombre){
-    return `HOLA ${nombre}`;
+function eval_loginUser(){
+ 
+}
+/**
+ * 
+ */
+
+function execute_loginUser(){
+
 }
 
+//-- FUNCIONES DE OPERACION
 
 
 
