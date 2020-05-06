@@ -1,5 +1,8 @@
 console.log("CARGADO => main.js");
 
+// VARIABLES GLOBALES
+const URL_AJAX_PROCESAR = "./ajax/procesarAjax.php";
+
 
 
 /**
@@ -77,6 +80,73 @@ function evalSesion() {
 //****************************************************************************************** */
 //****************************************************************************************** */
 //****************************************************************************************** */
+
+/**
+ *  
+ */
+function dataHTML_registroUsuario(){
+    let txt_user = document.querySelector("#txt_user");
+    let txt_password = document.querySelector("#txt_password");
+
+    return {
+        element:{
+            txt_user,
+            txt_password
+        },
+        value:{      
+            txt_userv: txt_user.value.trim().toLowerCase(), 
+            txt_passwordv: txt_password.value.trim().toLowerCase()
+        }
+    }
+}
+/**
+ * 
+ */
+function eval_registroUsuario(){
+    let dataHTML = dataHTML_registroUsuario();
+    let {txt_userv, txt_passwordv} = dataHTML.value;
+
+    if(txt_userv != "" && txt_passwordv != ""){                
+        return true;
+    }else{
+        return false;
+    }
+}
+/**
+ * 
+ */
+
+function execute_registroUsuario(){
+    if(eval_registroUsuario()){
+        let dataHTML = dataHTML_registroUsuario();
+        let {txt_userv, txt_passwordv} = dataHTML.value;
+
+        fetchKev('POST',{
+            id:'itec',
+            txt_userv,
+            txt_passwordv           
+        },data=>{         
+            console.log(data)   
+            sweetModalMin('server request','center',1200,'success')
+        },URL_AJAX_PROCESAR)
+
+    }else{
+        
+    }
+}
+
+//-- FUNCIONES DE OPERACION
+/**
+ * 
+ */
+function action_registroUsuario_saludarUsuario(nombre){
+    return `HOLA ${nombre}`;
+}
+
+
+
+
+
 
 
 

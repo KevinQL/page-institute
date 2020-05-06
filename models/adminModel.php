@@ -51,6 +51,28 @@
             }
         }
 
+
+
+        /**
+         * 
+         */
+        protected function insert_user_Model($data){
+            $query = "INSERT INTO usuario SET 
+                        user = '{$data->user}',
+                        password = '{$data->password}',
+                        estado = '{$data->estado}',
+                        ";
+            $result_query = self::ejecutar_una_consulta($query);
+            if($result_query->rowCount() >= 1){
+                return ['eval'=>true, 'data'=> $data];
+            }else{
+                return ['eval'=>false, 'data'=> null];
+            }
+            
+        }
+
+
+
         
         //-------------------------------------------------------------------------------
         /**

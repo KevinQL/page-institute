@@ -131,9 +131,31 @@
             
         }
         
+        /**
+         * Probando funcion en la página publico
+         */
         public function probando123(){
             return "hello from server xd ";
         }
+
+
+        /**
+         * 
+         */
+        public function insert_user_Controller($data){
+            $pass_hash = $this->encriptar_desencriptar($this->txtres($data->txt_passwordv),'');
+            $dataModel = new stdClass;            
+            $dataModel->user = $this->txtres($data->txt_userv);
+            $dataModel->password = $pass_hash;
+            $dataModel->estado = 1; //1. activo 0. inactivo
+            $res_model = self::insert_user_Model($dataModel);     
+            return $res_model;
+        }
+
+
+
+
+
 
         //------------------------------------------------------------------------------
 
