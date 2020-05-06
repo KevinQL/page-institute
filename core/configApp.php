@@ -3,7 +3,7 @@
 	|  Datos del servidor - Data of the server  |
 	===========================================*/
 	const SERVER="localhost";
-	const DB="petsysdb";
+	const DB="db_itec";
 	const USER="root";
 	const PASS="cardenas";
 
