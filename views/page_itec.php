@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/1c90e8b317.js" crossorigin="anonymous"></script>
 
     <!-- Styles me -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="public/css/estilos_itec.css">
 
     <title>Hello, world!</title>
 
@@ -23,12 +23,12 @@
     <header class="pt-5 contenido-header">
         <!--
         -->
-        <img src="img/waves-shape.svg" alt="jaja" class="img-fluid w-100 img-svg-header">
+        <img src="public/img/waves-shape.svg" alt="jaja" class="img-fluid w-100 img-svg-header">
         
         <section class="container">
             <div class="row">
                 <div class="col-md-6 position-absolute">
-                    <img src="img/logo-instituto.png" alt="logo" class="img-fluid w-50 img-logo">                    
+                    <img src="public/img/logo-instituto.png" alt="logo" class="img-fluid w-50 img-logo">                    
                 </div>
                 <div class="col-md-12 text-right">
                     <nav class="nav-head">
@@ -45,7 +45,7 @@
                         <ul class="nav-head__ul mb-0 pb-0">
                             <li class="nav-head__li"><a href="#" class="nav-head__a">El instituto</a>                               
                                 <div class="submenu-head text-left">
-                                    <img src="img/nf.jpg" alt="" class="img-fluid float-left">
+                                    <img src="public/img/nf.jpg" alt="" class="img-fluid float-left">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-md-4">
@@ -68,7 +68,7 @@
 
                             <li class="nav-head__li"><a href="#" class="nav-head__a">Carreras</a>
                                 <div class="submenu-head text-left bg-success">
-                                    <img src="img/nf.jpg" alt="" class="img-fluid float-left">
+                                    <img src="public/img/nf.jpg" alt="" class="img-fluid float-left">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-md-4">
@@ -129,7 +129,7 @@
                             </div>
             
                             <div class="col-md-5 text-center pr-5">
-                                <img src="img/img-slider.png" alt="imagen estudiantes" class="d-block w-100">
+                                <img src="public/img/img-slider.png" alt="imagen estudiantes" class="d-block w-100">
                             </div>
                             <div class="col-md-1"></div>
                         </div>
@@ -160,7 +160,7 @@
                             </div>
             
                             <div class="col-md-5 text-center pr-5">
-                                <img src="img/img-slider.png" alt="imagen estudiantes" class="d-block w-100">
+                                <img src="public/img/img-slider.png" alt="imagen estudiantes" class="d-block w-100">
                             </div>
                             <div class="col-md-1"></div>
                         </div>
@@ -191,37 +191,37 @@
         </h4>
         <div class="row">
             <div class="col-md-3 text-center">
-                <img src="img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
+                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
                 <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
-                <img src="img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
+                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
                 <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
-                <img src="img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
+                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
                 <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
-                <img src="img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
+                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
                 <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3 text-center">
-                <img src="img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
+                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
                 <p class="text-center"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
-                <img src="img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
+                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
                 <p class="text-center"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
-                <img src="img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
+                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
                 <p class="text-center"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
-                <img src="img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
+                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
                 <p class="text-center"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
         </div>
@@ -256,7 +256,7 @@
                             <div class="col-md-12">
 
                                 <div class="seccion-blog">
-                                    <img src="img/nf.jpg" alt="imagen" class="seccion-blog__img">
+                                    <img src="public/img/nf.jpg" alt="imagen" class="seccion-blog__img">
                                     <div class="bg-warning seccion-blog__texto">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.                                        
                                     </div>
@@ -267,7 +267,7 @@
                             <div class="col-md-12">
 
                                 <div class="seccion-blog">
-                                    <img src="img/nf.jpg" alt="imagen" class="seccion-blog__img">
+                                    <img src="public/img/nf.jpg" alt="imagen" class="seccion-blog__img">
                                     <div class="bg-warning seccion-blog__texto">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.                                        
                                     </div>
@@ -278,7 +278,7 @@
                             <div class="col-md-12">
 
                                 <div class="seccion-blog">
-                                    <img src="img/nf.jpg" alt="imagen" class="seccion-blog__img">
+                                    <img src="public/img/nf.jpg" alt="imagen" class="seccion-blog__img">
                                     <div class="bg-warning seccion-blog__texto">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit.                                        
                                     </div>
@@ -323,7 +323,7 @@
     </section>
 
     <footer class="footer-content">
-        <img src="img/waves-shape.svg" alt="footer img" class="img-fluid w-100 footer-content__fondo-svg">  
+        <img src="public/img/waves-shape.svg" alt="footer img" class="img-fluid w-100 footer-content__fondo-svg">  
         <div class="footer-content__info">
             
             <div class="container pt-5">
@@ -340,7 +340,7 @@
                         </p>
                     </div>
                     <div class="col-md-4 text-center">
-                        <img src="img/logo-instituto.png" alt="" class="img-fluid w-75">
+                        <img src="public/img/logo-instituto.png" alt="" class="img-fluid w-75">
                         <a href="#" class="btn btn-outline-light btn-lg mt-5"> Secured By positive</a>
                     </div>
                     <div class="col-md-4">
