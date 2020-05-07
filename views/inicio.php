@@ -11,7 +11,7 @@
 <body>
 
     <?php
-        include_once("views/modules/navegacion.html");
+        include_once("views/modules/navegacion__.php");        
     ?>
 
 

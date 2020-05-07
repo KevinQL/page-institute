@@ -9,8 +9,9 @@
     <title>Info</title>
 </head>
 <body>
+    
     <?php
-        include_once("views/modules/navegacion.html");
+        include_once("views/modules/navegacion__.php");        
     ?>
 
     <h1>PÁGIANA DE INFORMACIÓN</h1>

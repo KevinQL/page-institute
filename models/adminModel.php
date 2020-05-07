@@ -16,7 +16,8 @@
             $query = "INSERT INTO usuario SET 
                         user = '{$data->user}',
                         password = '{$data->password}',
-                        estado = {$data->estado}
+                        estado = {$data->estado},
+                        tipo_usuario = 1
                         ";
             $result_query = self::ejecutar_una_consulta($query);
             if($result_query->rowCount() >= 1){
@@ -31,7 +32,7 @@
          * 
          */
         protected function session_user_Model($user,$password){
-            $query = "SELECT id_usuario,user,password,estado FROM usuario WHERE user='{$user}' AND estado=1";
+            $query = "SELECT id_usuario,user,password,estado,tipo_usuario FROM usuario WHERE user='{$user}' AND estado=1";
             $result = mainModel::ejecutar_una_consulta($query);
             
             $eval = false;

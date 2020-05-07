@@ -36,9 +36,9 @@
 
                 //Validando niveles de seguridad. [1]:NIVEL ADMINISTRADOR
                 if($_SESSION['data']['tipo_usuario']==1){
-                    $arrayPaginas = ["salir_sistema","inicio","info","adm_slider","adm_carrera",'adm_usuario'];
+                    $arrayPaginas = ["salir_sistema","inicio","page_itec","info","adm_slider","adm_carrera"];
                 }else{
-                    $arrayPaginas = ["salir_sistema","inicio","info","adm_slider","adm_carrera",'adm_usuario'];
+                    $arrayPaginas = ["salir_sistema","inicio","page_itec","info"];
                 }              
                 
                 /**
@@ -48,7 +48,7 @@
                 if(in_array($pagina, $arrayPaginas, true)){
                     $pagina .= ".php";
                 }else {
-                    $pagina = "page_itec.php";
+                    $pagina = "inicio.php";
                 }
 
             }else{
