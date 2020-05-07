@@ -25,8 +25,8 @@
             $res_etiqueta= $etiqueta->select_list_of_label_Controller($data);  
             echo json_encode($res_etiqueta);
         }
-
-        elseif ($data->id === "itec") {
+        //Regitro usuario para la administración del sistema
+        elseif ($data->id === "REGISTRO-USER") {
             # code...
             $result_operation = $obj->insert_user_Controller($data);
             echo json_encode($result_operation);

@@ -122,7 +122,7 @@ function execute_registroUsuario(){
         let {txt_user, txt_password} = dataHTML.element;
 
         fetchKev('POST',{
-            id:'itec',
+            id:'REGISTRO-USER',
             txt_userv,
             txt_passwordv           
         },data=>{                     
