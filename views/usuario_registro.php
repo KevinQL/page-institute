@@ -20,7 +20,7 @@
        <div class="container">
            <div class="row">
                <div class="col-md-4 form-group">
-                    <h3 class="text-center text-muted lead">REGISTRAR USUARIO</h3>
+                    <h3 class="text-center text-muted lead">REGISTRARSE</h3>
                     <hr>
                     <input type="text" id="txt_user" class="form-control text-uppercase my-2" placeholder="INGRESE USUARIO">                     
                     <input type="password" id="txt_password" class="form-control text-uppercase my-2" placeholder="INGRESE PASSWORD"
