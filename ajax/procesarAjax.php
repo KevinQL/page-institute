@@ -11,24 +11,16 @@
         $data = json_decode($_POST['data']);
         //Instancia del objeto controller
         $obj = new adminController();
-    
-        if($data->id === "SESSION"){
-            # code...
-            $session = new adminController();
-            $res_session = $session->sessionController($data);
-            echo json_encode($res_session);
-            
-        }
-       
-        elseif ( $data->id === "S-ETIQUETAS-MN"){
-            $etiqueta = new adminController();
-            $res_etiqueta= $etiqueta->select_list_of_label_Controller($data);  
-            echo json_encode($res_etiqueta);
-        }
-        //Regitro usuario para la administración del sistema
-        elseif ($data->id === "REGISTRO-USER") {
+
+        //Regitro usuario para la administración del sistema 
+        if ($data->id === "REGISTRO-USER") {
             # code...
             $result_operation = $obj->insert_user_Controller($data);
+            echo json_encode($result_operation);
+        }
+        elseif ($data->id === "SESSION-USER") {
+            # code...
+            $result_operation = $obj->session_user_Controller($data);
             echo json_encode($result_operation);
         }
 

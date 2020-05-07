@@ -8,50 +8,6 @@
     }
 
     class adminModel extends mainModel{        
-        
-        /**
-         * (IMPORTANTE)
-         * Parte Modulo session 
-         */
-        protected function obtenerUsuarioSession($user,$password){
-            $query = "SELECT id,dni,nombre,apellido,user,password,tipo_usuario,estado FROM usuario WHERE user='{$user}' AND estado=1";
-            $result = mainModel::ejecutar_una_consulta($query);
-            if($result->rowCount() >= 1){
-                $arr = [];
-                $eval = false;
-                while($user = $result->fetch(PDO::FETCH_ASSOC)){
-                    if(self::encriptar_desencriptar($password,$user['password'])){
-                        $arr = $user;
-                        $eval = true;
-                    }
-                }
-                return ['eval'=>$eval,'data'=>$arr];
-            }else{
-                return ['eval'=>false, 'data'=>[]];
-            }
-        }
-
-        
-        protected function insert_usuario_Model($data){
-            $query = "INSERT INTO usuario SET
-                    dni = '{$data->dni}',
-                    nombre = '{$data->nombre}',
-                    apellido = '{$data->apellido}',
-                    user = '{$data->user}',
-                    password = '{$data->password}',
-                    tipo_usuario = {$data->tipo_usuario},
-                    estado = {$data->estado}
-                ";
-            
-            $result = mainModel::ejecutar_una_consulta($query);
-            if($result->rowCount() >= 1){
-                return ["eval"=>true,'data'=>[$data]];
-            }else{
-                return ['eval'=>false,'data'=>[]];
-            }
-        }
-
-
 
         /**
          * 
@@ -70,7 +26,27 @@
             }
             
         }
+        
+        /**
+         * 
+         */
+        protected function session_user_Model($user,$password){
+            $query = "SELECT id_usuario,user,password,estado FROM usuario WHERE user='{$user}' AND estado=1";
+            $result = mainModel::ejecutar_una_consulta($query);
+            
+            $eval = false;
+            $data = [];
 
+            if($result->rowCount() >= 1){
+                while($user_fla = $result->fetch(PDO::FETCH_ASSOC)){
+                    if($this->encriptar_desencriptar($password,$user_fla['password'])){
+                        $data = $user_fla;
+                        $eval = true;
+                    }
+                }             
+            }
+            return ['eval'=>$eval, 'data'=>$data];
+        }
 
 
         
@@ -87,9 +63,9 @@
          */        
         protected function encriptar_desencriptar($password,$password_db){
             if(trim($password_db) === ''){
-                return password_hash($password, PASSWORD_DEFAULT);//Encripta 
+                return password_hash($password, PASSWORD_DEFAULT);//Encripta (SOLO se necesita el PRIMER parametro.EJEM: ->fn('pass','')<-)
             }else{
-                return password_verify($password,$password_db);//desencripta
+                return password_verify($password,$password_db);//desencripta (SOLO cuando los DOS parametros tengan valor)
             }
         }
 

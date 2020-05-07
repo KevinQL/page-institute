@@ -23,14 +23,17 @@
                     <h3 class="text-center lead text-muted">INICIAR SESSION</h3>
                     <hr>
                     <input type="text" id="txt_user" class="form-control text-uppercase my-2" placeholder="INGRESE USUARIO">                     
-                    <input type="password" id="txt_password" class="form-control text-uppercase my-2" placeholder="INGRESE PASSWORD"
+                    <input type="password" id="txt_password" class="form-control text-uppercase my-2" placeholder="INGRESE CONTRASEÑA"
                     > 
-                    <input type="submit" class="btn btn-primary btn-lg btn-block my-3" value="INICIAR SESSION" onclick="execute_registroUsuario()">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block my-3" value="INICIAR SESSION" onclick="execute_loginUser()">
                     
                     <a href="?pg=usuario_registro">registrarse</a>
                 </div>
+                <div class="col-md-3 text-center p-5 d-none cargando">
+                    <i class="fas fa-spinner fa-pulse fa-3x"></i>
+                </div>
             </div>
-            </div>
+        </div>
     </div>
 
     

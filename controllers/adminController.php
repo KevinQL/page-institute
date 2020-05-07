@@ -71,79 +71,11 @@
 
         }
 
-
-
-        /**
-         * VERIFICADO
-         * (IMPORTANTE)
-         */
-        public function sessionController($data){
-            //Recibiendo datos de la página
-            $user = $this->txtres($data->userv);
-            $password = $this->txtres($data->passwordv);
-            //enviado datos al modelo
-            $resModel = adminModel::obtenerUsuarioSession($user,$password);
-            //evaluando resultados
-            if($resModel['eval']){           
-                //Obtener datos. y devolviendo resultado a la pagina (vista-usuario)
-                $resData = $resModel['data'];
-                //Iniciando session
-                session_start();
-                $_SESSION['start']=true;
-                $_SESSION['data']=$resData;
-                //Retornando los datos a la vista
-                return ['eval'=>true,'data'=>$resData];                
-            }else{
-                return ['eval'=>false,'data'=>[]];
-            }
-        }
-
-
-        //----
-        public function traerUser(){
-            $result = adminModel::sqlSingle("SELECT * FROM usuario");
-            return $result;
-        }
-
-
-        /**
-         * @return Array
-         * @param Object $data
-         * Funcion que insertar usuarios en la db
-         */
-        public function insert_usuario_Controller($data){  
-
-            $password_hash = self::encriptar_desencriptar($this->txtres($data->txtPasswordv),'');
-
-            $dataModel = new stdClass; 
-
-            $dataModel->dni = $this->txtres($data->txtDniv);
-            $dataModel->nombre = $this->txtres($data->txtNombrev);
-            $dataModel->apellido = $this->txtres($data->txtApellidov);
-            $dataModel->user = $this->txtres($data->txtUsuariov);                        
-            $dataModel->password = $password_hash;                        
-            $dataModel->tipo_usuario = ( $this->txtres($data->radioNivelUsuariov)==="administrador" ) ? 1 : 2 ;                        
-            $dataModel->estado = ( $this->txtres($data->switchEstadov) ) ? 1 : 0 ;                        
-
-            $resModel = adminModel::insert_usuario_Model($dataModel);
-            
-            return $resModel;            
-            
-        }
-        
-        /**
-         * Probando funcion en la página publico
-         */
-        public function probando123(){
-            return "hello from server xd ";
-        }
-
-
         /**
          * 
          */
         public function insert_user_Controller($data){
-            $pass_hash = $this->encriptar_desencriptar($this->txtres($data->txt_passwordv),'');
+            $pass_hash = self::encriptar_desencriptar($this->txtres($data->txt_passwordv),'');
             $dataModel = new stdClass;            
             $dataModel->user = $this->txtres($data->txt_userv);
             $dataModel->password = $pass_hash;
@@ -152,7 +84,37 @@
             return $res_model;
         }
 
+        /**
+         * 
+         */
+        public function session_user_Controller($data){
 
+            $user = $this->txtres($data->txt_userv);
+            $password = $this->txtres($data->txt_passwordv);
+            //enviado datos al modelo
+            $res_model = self::session_user_Model($user,$password);
+            //evaluando resultados
+            if($res_model['eval']){           
+                
+                $data_user = $res_model['data'];
+                //Iniciando session
+                session_start();
+                $_SESSION['start']=true;
+                $_SESSION['data']=$data_user;
+                
+                return ['eval'=>true,'data'=>$data_user];                
+            }else{
+                return ['eval'=>false,'data'=>[]];
+            }            
+        }
+
+                
+        /**
+         * Probando funcion en la página publico ITEC
+         */
+        public function probando123(){
+            return "hello from server xd ";
+        }
 
 
 

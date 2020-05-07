@@ -4,79 +4,6 @@ console.log("CARGADO => main.js");
 const URL_AJAX_PROCESAR = "./ajax/procesarAjax.php";
 
 
-
-/**
- * 
- */
-evalSesion(); //ESPERANDO QUE SE PRESIONE EL BOTON DE ENVIAR DATOS PARA VALIDAR SESSION
-//****************************************************************************************** */
-
-
-function dataHtml_Session(){
-    let user = document.querySelector("#user");
-    let password = document.querySelector("#password");
-    return {
-        element:{
-            user, password
-        },
-        value:{
-            userv: user.value.trim(),
-            passwordv: password.value.trim()
-        }
-    };
-}
-
-function evaluar_Session(){
-    let dataHtml = dataHtml_Session();
-    let {userv,passwordv} = dataHtml['value'];
-    let {user,password} = dataHtml['element'];
-
-    if(userv.length != 0 && passwordv.length != 0){
-        intercambiaClases(user,'is-invalid','is-valid',false);
-        intercambiaClases(password,'is-invalid','is-valid',false);
-        return true;
-    }else{
-        (userv.length == 0)?intercambiaClases(user,'is-valid','is-invalid',false):intercambiaClases(user,'is-invalid','is-valid',false);
-        (passwordv.length == 0)?intercambiaClases(password,'is-valid','is-invalid',false):intercambiaClases(password,'is-invalid','is-valid',false);        
-        sweetModalMin('Llenar los campos','top-end',1500,'info');
-        return false;
-    }
-}
-/**
- * 
- */
-function evalSesion() {
-    let el = document.querySelector("#btn-ingresar");    
-    if(el){
-        el.addEventListener('click',(ev)=>{
-            ev.preventDefault();
-            
-            if(evaluar_Session()){
-                let dataHtml = dataHtml_Session();
-                let {user,password} = dataHtml['element'];
-                let {userv,passwordv} = dataHtml['value'];
-    
-                ajaxKev('post',{                   
-                    id:'SESSION',
-                    userv,
-                    passwordv
-                },
-                (data)=>{                    
-                    if(data.eval){
-                        location.reload(); // carga la página con la misma URL. de modo que es:: index.php?pg=login /                        
-                    }else{  
-                        sweetModalMin('Datos incorrectos!!','top',2000,'error');
-                        intercambiaClases(user,'is-valid',"",false);                      
-                        intercambiaClases(password,'is-valid',"",false);                      
-                    }
-                });
-
-            }
-
-        })        
-    }
-}
-
 //****************************************************************************************** */
 //****************************************************************************************** */
 //------------------ REGISTRO DE USUARIO ------------------------------
@@ -114,7 +41,6 @@ function eval_registroUsuario(){
 /**
  * 
  */
-
 function execute_registroUsuario(){
     if(eval_registroUsuario()){
         let dataHTML = dataHTML_registroUsuario();
@@ -140,6 +66,9 @@ function execute_registroUsuario(){
 }
 
 //-- FUNCIONES DE OPERACION
+/**
+ * 
+ */
 
 
 //****************************************************************************************** */
@@ -149,8 +78,8 @@ function execute_registroUsuario(){
  *  
  */
 function dataHTML_loginUser(){
-    let txt_user = document.querySelector("#");
-    let txt_password = document.querySelector("#");
+    let txt_user = document.querySelector("#txt_user");
+    let txt_password = document.querySelector("#txt_password");
 
     return {
         element:{
@@ -167,18 +96,51 @@ function dataHTML_loginUser(){
  * 
  */
 function eval_loginUser(){
- 
+    let dataHTML = dataHTML_loginUser();
+    let {txt_userv, txt_passwordv} = dataHTML.value;
+
+    if(txt_userv != "" && txt_passwordv != ""){                
+        return true;
+    }else{
+        return false;
+    }
 }
 /**
  * 
  */
+function execute_loginUser(){    
+    if(eval_loginUser()){
+        let dataHTML = dataHTML_loginUser();
+        let {txt_userv, txt_passwordv} = dataHTML.value;
+        //let {txt_user, txt_password} = dataHTML.element;
 
-function execute_loginUser(){
+        fetchKev('POST',{
+            id:'SESSION-USER',
+            txt_userv,
+            txt_passwordv           
+        },data=>{    
+            console.log(data)                 
+            if(data.eval){
+                sweetModalMin('INICIANDO...!','top-start',900,'success')     
+                let cargando = document.querySelector('.cargando')
+                intercambiaClases(cargando,'d-none','d-block',true);
+                setTimeout(() => {
+                    location.reload(); // carga la página con la misma URL. de modo que es:: index.php?pg=login /                                  
+                },1000);   
+            }else{
+                sweetModalMin('No registrado!','top-start',1200,'warning')
+            }
+        },URL_AJAX_PROCESAR)
 
+    }else{
+        
+    }
 }
 
 //-- FUNCIONES DE OPERACION
-
+/**
+ * 
+ */
 
 
 
