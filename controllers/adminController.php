@@ -38,7 +38,7 @@
                 if($_SESSION['data']['tipo_usuario']==1){
                     $arrayPaginas = ["salir_sistema","inicio","info","adm_slider","adm_carrera",'adm_usuario'];
                 }else{
-                    $arrayPaginas = ["salir_sistema","inicio","info"];
+                    $arrayPaginas = ["salir_sistema","inicio","info","adm_slider","adm_carrera",'adm_usuario'];
                 }              
                 
                 /**
