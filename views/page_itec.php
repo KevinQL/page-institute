@@ -111,11 +111,13 @@
                                 <div class="text-center txt-presentacion">
                                     <h1 class="txt-presentacion__titulo">
                                         Inicio de Clase <br>
-                                        <span class="txt-presentacion__titulo-decorado  d-inline-block">11 de Marzo</span>
-                                        <?php                                        
-                                            $obj = new webItecController();
-                                            echo $obj->mostrar_mensaje_Controller("hola mundo");
-                                        ?>
+                                        <span class="txt-presentacion__titulo-decorado  d-inline-block">
+                                            <?php                                        
+                                                $obj = new webItecController();
+                                                echo $obj->obtener_fecha_slider_Controller();
+                                            ?>
+                                            <!--11 de Marzo-->
+                                        </span>
                                     </h1>
                                 </div>
                                 <div class="txt-licencia">

@@ -55,7 +55,11 @@ function execute_sliderInsert(){
                 console.log(data)
                 sweetModal('Datos procesados!','center','success',1500);
             }else{
-                sweetModal('Algo no salió bien!!','center','error',1500);
+                if(data.eval_img){
+                    sweetModal('Imagen actualizado!','center','success',1500);
+                }else{
+                    sweetModal('Algo no salió bien!!','center','error',1500);
+                }
             }
 
         },URL_AJAX_PROCESAR); //URL_AJAX_PROCESAR  /  URL_prueba
