@@ -48,6 +48,18 @@
             }
             return ['eval'=>$eval, 'data'=>$data];
         }
+        /**
+         * 
+         */
+        protected function insert_slider_Model($data){
+            $query = "UPDATE slider SET fecha_txt='{$data->fecha_txt}' WHERE id_slider = 1";
+            $result_query = self::ejecutar_una_consulta($query);
+            $eval = false;
+            if($result_query->rowCount() >= 1){
+                $eval = true;
+            }
+            return ['eval'=>$eval, 'data'=>$data];
+        }
 
 
         

@@ -1,8 +1,24 @@
 <?php
-/**
- * en este archivo se maneja el guardado del archivo modelo .json
- */
 
+$data = json_decode($_REQUEST['data']);
+$file = $_FILES['files'];
+
+$nombre = "slider.png";
+$tmg_save = $file['tmp_name'];
+$dir_img_slider = './../public/slider_files/iduser-';
+
+$resultado = move_uploaded_file($tmg_save, $dir_img_slider . $nombre); //se guarda el modelo json
+
+
+if($resultado){
+    
+    echo json_encode([$data,$file]);
+    
+}else{
+    echo json_encode("errrrrror");
+}
+
+/*
 $data = json_decode($_REQUEST['data']);
 
 $file = $_FILES['archivo'];
@@ -19,7 +35,6 @@ if(!file_exists($dir_model_compartido)){
     $resultado = move_uploaded_file($tmg_save, $dir_model_compartido.'/'.$nombre); //se guarda el modelo json
 }else{
     $resultado = move_uploaded_file($tmg_save, $dir_model_compartido.'/'.$nombre); //se guarda el modelo json
-    //$resultado = move_uploaded_file($tmg_save, '../public/'.$nombre); //se guarda el modelo json
 }
 
 if($resultado){
@@ -29,5 +44,4 @@ if($resultado){
 }else{
     echo json_encode("errrrrror");
 }
-/*
 */

@@ -2,6 +2,7 @@
     session_start();
     
     require_once("controllers/adminController.php");
+    require_once("controllers/webItecController.php");
     
     $pag = new adminController();
 

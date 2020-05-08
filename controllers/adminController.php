@@ -107,8 +107,33 @@
                 return ['eval'=>false,'data'=>[]];
             }            
         }
+        /**
+         * 
+         */
+        public function insert_slider_Controller($data, $file){
+            
+            $dataModel = new stdClass;
 
-                
+            $dataModel->fecha_txt = $this->txtres($data->txt_fechav);
+
+            $res_model = self::insert_slider_Model($dataModel);
+
+            $res_img = $this->guardar_img($file, './../public/slider_files/iduser-', 'slider.png');
+
+            if( $res_model['eval'] && $res_img ){
+                return $res_model;
+            }else{
+                return ['eval'=>false, 'data'=>null];
+            }
+        }
+        
+        //guardar imgen
+        private function guardar_img($file, $dir_destino, $name){
+            $resultado = move_uploaded_file($file['tmp_name'], $dir_destino . $name); //se guarda el modelo json
+            return $resultado;
+        }
+             
+        
         /**
          * Probando funcion en la página publico ITEC
          */

@@ -23,11 +23,18 @@
             $result_operation = $obj->session_user_Controller($data);
             echo json_encode($result_operation);
         }
+        elseif ($data->id === "INSERT-SLIDER") {
+            # code...
+            $img_slider = $_FILES['img_file'];            
+            $result_operation = $obj->insert_slider_Controller($data, $img_slider);
+            echo json_encode($result_operation);
+        }
 
 
         else {
             echo json_encode("ERROR!!");
         }
+
     }else{
         echo json_encode("ERROR!!");
     }

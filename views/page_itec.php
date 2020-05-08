@@ -112,6 +112,10 @@
                                     <h1 class="txt-presentacion__titulo">
                                         Inicio de Clase <br>
                                         <span class="txt-presentacion__titulo-decorado  d-inline-block">11 de Marzo</span>
+                                        <?php                                        
+                                            $obj = new webItecController();
+                                            echo $obj->mostrar_mensaje_Controller("hola mundo");
+                                        ?>
                                     </h1>
                                 </div>
                                 <div class="txt-licencia">
@@ -129,7 +133,10 @@
                             </div>
             
                             <div class="col-md-5 text-center pr-5">
+                                <img src="./public/slider_files/iduser-slider.png" alt="imagen estudiantes" class="d-block w-100">
+                                <!--
                                 <img src="public/img/img-slider.png" alt="imagen estudiantes" class="d-block w-100">
+                                -->
                             </div>
                             <div class="col-md-1"></div>
                         </div>
