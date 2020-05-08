@@ -60,6 +60,24 @@
             }
             return ['eval'=>$eval, 'data'=>$data];
         }
+        /**
+         * 
+         */
+        protected function insert_curso_Model($data){
+            $query = "INSERT INTO curso SET 
+                        nombre_curso = '{$data->nombre_curso}',
+                        fecha_txt = '{$data->fecha_txt}',
+                        costo = '{$data->costo}',
+                        orden = '{$data->orden}',
+                        url_img = '{$data->url_img}'
+            ";
+            $result_query = self::ejecutar_una_consulta($query);
+            $eval = false;
+            if($result_query->rowCount() >= 1){
+                $eval = true;
+            }
+            return ['eval'=>$eval, 'data'=>$data];
+        }
 
 
         

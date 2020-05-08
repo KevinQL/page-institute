@@ -36,7 +36,7 @@
 
                 //Validando niveles de seguridad. [1]:NIVEL ADMINISTRADOR
                 if($_SESSION['data']['tipo_usuario']==1){
-                    $arrayPaginas = ["salir_sistema","inicio","page_itec","info","adm_slider","adm_carrera"];
+                    $arrayPaginas = ["salir_sistema","inicio","page_itec","info","adm_slider","adm_curso"];
                 }else{
                     $arrayPaginas = ["salir_sistema","inicio","page_itec","info"];
                 }              
@@ -125,27 +125,45 @@
             }else{
                 return ['eval'=>false,'eval_img'=>$res_img, 'data'=>null];
             }
-        }
-
-        //guardar imgen
-        private function guardar_img($file, $dir_destino, $name){
-            $resultado = move_uploaded_file($file['tmp_name'], $dir_destino . $name); //se guarda el modelo json
-            return $resultado;
-        }
-             
-        
+        }       
         /**
-         * Probando funcion en la página publico ITEC
+         * 
          */
-        public function probando123(){
-            return "hello from server xd ";
-        }
+        public function insert_curso_Controller($data, $file){
+            $dataModel = new stdClass;
+
+            $dataModel->nombre_curso = $this->txtres($data->txt_carrerav);
+            $dataModel->fecha_txt = $this->txtres($data->txt_fechav);
+            $dataModel->costo = $this->txtres($data->txt_costov);
+            $dataModel->orden = $this->txtres($data->ordenSelectv);
+            $dataModel->url_img = $this->txtres($data->nameIMG); //tratar nombre imagen
+
+            $res_model = self::insert_curso_Model($dataModel);
+            
+            $res_img = $this->guardar_img($file, './../public/curso_files/iduser-', $dataModel->url_img);
+            
+            if( $res_model['eval'] && $res_img ){
+                return $res_model;
+            }else{
+                return ['eval'=>false, 'data'=>null];
+            }
+            /*
+            */            
+
+        }          
 
 
 
 
         //------------------------------------------------------------------------------
 
+        /**
+         * Función para guardar imagenes en el servidor
+         */        
+        private function guardar_img($file, $dir_destino, $name){
+            $resultado = move_uploaded_file($file['tmp_name'], $dir_destino . $name); 
+            return $resultado;
+        }
         /**
          * (IMPORTANTE)
          * Datos del usuario actual REGISTRADO o LOGUEADO

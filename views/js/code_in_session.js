@@ -28,8 +28,8 @@ function eval_sliderInsert(){
     let dataHTML = dataHTML_sliderInsert();
     let {txt_fechav, img_sliderv} = dataHTML.value; 
     if(txt_fechav != "" && img_sliderv.length != 0 ){ 
-        console.log(es_imagen(img_sliderv[0].type),"<-ver")
-        if(es_imagen(img_sliderv[0].type)){
+        console.log(es_imagen_sliderInsert(img_sliderv[0].type),"<-ver")
+        if(es_imagen_sliderInsert(img_sliderv[0].type)){
             return true;
         }        
     }
@@ -69,15 +69,114 @@ function execute_sliderInsert(){
     }
 }
 
-//-- FUNCIONES DE OPERACION
+//-- FUNCIONES DE OPERACION 
 /**
- * 
  * @param {string} type_img formato de imagagen. EJM 'img/jpeg'. Este dato es proporcionado por la propiedad 'type' del elemento FILE html
+ * @function eval_sliderInsert Se está usando en está funcion
+ * @function eval_curso_insert 
+ *  
  */
-function es_imagen(type_img){
+function es_imagen_sliderInsert(type_img){
     if(type_img == "image/png" || type_img == "image/jpeg" || type_img == "image/jpg"){
         return true;
     }else{
         return false;
     }
+}
+
+
+//****************************************************************************************** */
+//****************************************************************************************** */
+//------------------ INSERTAR CURSO ------------------------------
+/**
+ *  
+ */
+function dataHTML_curso(){
+    let txt_carrera = document.querySelector("#txt_carrera");
+    let txt_fecha = document.querySelector("#txt_fecha");
+    let txt_costo = document.querySelector("#txt_costo");
+    let img_curso = document.querySelector("#img_curso");
+    let ordenSelect = document.querySelector("#ordenSelect");
+
+    return {
+        element:{
+            txt_carrera,
+            txt_fecha,
+            txt_costo,
+            img_curso,
+            ordenSelect
+        },
+        value:{   
+            txt_carrerav : txt_carrera.value.trim().toLowerCase(),
+            txt_fechav : txt_fecha.value.trim().toLowerCase(),
+            txt_costov : txt_costo.value.trim().toLowerCase(),
+            img_cursov : img_curso.files,
+            ordenSelectv : ordenSelect.value.trim().toLowerCase()              
+        }
+    }
+}
+/**
+ * 
+ */
+function eval_curso_insert(){
+    let dataHTML = dataHTML_curso();
+    let {txt_carrerav, txt_fechav, txt_costov, img_cursov, ordenSelectv} = dataHTML.value; 
+    let inputs_vacios = false;
+    let arr_elementv = [txt_carrerav, txt_fechav, txt_costov, ordenSelectv];
+    arr_elementv.forEach(element=>{
+        if(element.length == 0){
+            inputs_vacios = true;
+        }
+    })
+    if( !inputs_vacios && img_cursov.length != 0 ){         
+        if(es_imagen_sliderInsert(img_cursov[0].type)){
+            return true;
+        }        
+    }
+    return false;
+    
+}
+/**
+ * 
+ */
+function execute_curso_insert(){    
+    if(eval_curso_insert()){
+        let dataHTML = dataHTML_curso();
+        let {txt_carrerav, txt_fechav, txt_costov, img_cursov, ordenSelectv} = dataHTML.value; 
+    
+        fetchFileKev('POST',{
+            id:'INSERT-CURSO',
+            txt_carrerav,
+            txt_fechav,
+            txt_costov,
+            ordenSelectv,
+            nameIMG : nameImg_replace_curso(img_cursov[0].name)
+        },{
+            img_file: img_cursov[0]
+        },data=>{
+            
+            if(data.eval){
+                console.log(data)
+                sweetModal('Datos procesados!','center','success',1500);
+            }else{
+                
+                sweetModal('Algo no salió bien!!','center','error',1500);
+                
+            }
+
+        },URL_AJAX_PROCESAR); //URL_AJAX_PROCESAR  /  URL_prueba
+
+    }else{
+        sweetModal('Verificar datos!','center','warning',1500);
+    }
+}
+
+//-- FUNCIONES DE OPERACION
+/**
+ * 
+ * @param {string} $nameimg nombre de la imagen: proporcionado por la porpiedad 'NAME' de FILE
+ */
+function nameImg_replace_curso($nameimg){
+    let name = $nameimg.trim().replace(' ','-')
+    return name;
 }

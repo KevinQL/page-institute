@@ -29,6 +29,12 @@
             $result_operation = $obj->insert_slider_Controller($data, $img_slider);
             echo json_encode($result_operation);
         }
+        elseif ($data->id === "INSERT-CURSO") {
+            # code...
+            $img_slider = $_FILES['img_file'];            
+            $result_operation = $obj->insert_curso_Controller($data, $img_slider);
+            echo json_encode($result_operation);
+        }
 
 
         else {

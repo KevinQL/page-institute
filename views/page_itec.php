@@ -200,7 +200,7 @@
         </h4>
         <div class="row">
             <div class="col-md-3 text-center">
-                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
+                <img src="./public/curso_files/iduser-estadisc1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
                 <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
