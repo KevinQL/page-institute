@@ -151,7 +151,22 @@
             */            
 
         }          
-
+        /**
+         * 
+         */
+        public function select_curso_Controller($data){
+            $txt_search = $this->txtres($data->txt_search);            
+            $res_model = self::select_curso_Model($txt_search);
+            return $res_model;
+        }
+        /**
+         * 
+         */
+        public function delete_curso_Controller($data){
+            $id_curso = $this->txtres($data->id_curso);            
+            $res_model = self::delete_curso_Model($id_curso);
+            return $res_model;
+        }
 
 
 

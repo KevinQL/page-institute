@@ -97,6 +97,7 @@ function dataHTML_curso(){
     let txt_costo = document.querySelector("#txt_costo");
     let img_curso = document.querySelector("#img_curso");
     let ordenSelect = document.querySelector("#ordenSelect");
+    let tabla = document.querySelector(".tbl_list_curso");
 
     return {
         element:{
@@ -104,7 +105,8 @@ function dataHTML_curso(){
             txt_fecha,
             txt_costo,
             img_curso,
-            ordenSelect
+            ordenSelect,
+            tabla
         },
         value:{   
             txt_carrerav : txt_carrera.value.trim().toLowerCase(),
@@ -158,6 +160,8 @@ function execute_curso_insert(){
             if(data.eval){
                 console.log(data)
                 sweetModal('Datos procesados!','center','success',1500);
+                //recargar tabla
+                execute_curso_select('');
             }else{
                 
                 sweetModal('Algo no salió bien!!','center','error',1500);
@@ -169,6 +173,63 @@ function execute_curso_insert(){
     }else{
         sweetModal('Verificar datos!','center','warning',1500);
     }
+}
+/**
+ * 
+ * @param {string} txt_search filtro para hacer la busqueda en la bd curso. WHERE 'LIKE' 
+ */
+function execute_curso_select(txt_search){    
+    
+    //alert("holaaa");
+    let dataHTML = dataHTML_curso();
+    let {tabla} = dataHTML.element; 
+    
+    fetchKev('POST',{
+        id:'SELECT-CURSO',
+        txt_search
+    },data=>{
+        let RES_HTML = ``;
+        if(data.eval){
+            let cont = 0;
+            data.data.forEach(element=>{
+                cont++;
+                RES_HTML += `
+                <tr class="table-dark">
+                    <th scope="row">${cont}</th>
+                    <td>${element.nombre_curso}</td>
+                    <td>${element.fecha_txt}</td>
+                    <td>${element.costo}</td>
+                    <td>${element.orden}</td>
+                    <td>${element.url_img}</td>
+                    <td class="text-center">
+                        <button class="btn btn-danger" onclick="execute_curso_delete('${element.id_curso}')"><i class="far fa-trash-alt"></i></button> 
+                        <button class="btn btn-success" onclick=""><i class="fas fa-edit"></i></button> 
+                    </td>
+                </tr>                     
+                `;
+            })
+        }
+        tabla.innerHTML=RES_HTML;
+    },URL_AJAX_PROCESAR);
+}
+/**
+ * 
+ * @param {int} id_curso id del curso
+ */
+function execute_curso_delete(id_curso){
+     //SE DEBERÍA PREGUNTAR LA ACCION... IMPLEMENTAR
+     fetchKev('POST',{
+         id:'DELETE-CURSO',
+         id_curso
+     },data=>{
+         console.log(data)
+         if(data.eval){
+            sweetModal('Curso Eliminado!!!','center','success',1500);
+            //recargar tabla
+            execute_curso_select('');
+         }
+
+     },URL_AJAX_PROCESAR);
 }
 
 //-- FUNCIONES DE OPERACION

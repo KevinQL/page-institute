@@ -8,7 +8,7 @@
 
     <title>ADM_CARRERA</title>
 </head>
-<body>
+<body onload="execute_curso_select('')">
 
     <?php
         include_once("views/modules/navegacion__.php");        
@@ -79,10 +79,13 @@
                 <table class="table table-hover">
                     <thead>
                         <tr class="bg-secondary">
-                            <th scope="col">Type</th>
-                            <th scope="col">Column heading</th>
-                            <th scope="col">Column heading</th>
-                            <th scope="col">Column heading</th>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre Curso</th>
+                            <th scope="col">Inicio de Clase</th>
+                            <th scope="col">Costo</th>
+                            <th scope="col">Orden</th>
+                            <th scope="col">URL Imagen</th>
+                            <th scope="col" class="text-center">OPCIONES</th>
                         </tr>
                     </thead>
                     <tbody class="tbl_list_curso">
@@ -91,9 +94,6 @@
                             <td>Column content</td>
                             <td>Column content</td>
                             <td>Column content</td>
-                        </tr>
-                        <tr class="table-dark">
-                            <th scope="row">Dark</th>
                             <td>Column content</td>
                             <td>Column content</td>
                             <td>Column content</td>

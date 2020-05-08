@@ -78,7 +78,36 @@
             }
             return ['eval'=>$eval, 'data'=>$data];
         }
+        /**
+         * 
+         */
+        protected function select_curso_Model($txt_search){
+            
+            $eval = false;
+            $all_curse = [];
 
+            $query = "SELECT * FROM curso WHERE nombre_curso LIKE '%{$txt_search}%' ORDER BY orden DESC";
+            $result_query = self::ejecutar_una_consulta($query);
+            if($result_query->rowCount() >= 1){
+                while ($fl_curse = $result_query->fetch(PDO::FETCH_ASSOC)) {
+                    $all_curse[] = $fl_curse;
+                }
+                $eval = true;
+            }
+            return ['eval'=>$eval, 'data'=>$all_curse];
+        }
+        /**
+         * 
+         */
+        protected function delete_curso_Model($id_curso){
+            $eval = false;
+            $query = "DELETE FROM curso WHERE id_curso='{$id_curso}'";
+            $result_query = self::ejecutar_una_consulta($query);
+            if($result_query->rowCount() >= 1){
+                $eval = true;
+            }
+            return ['eval'=>$eval, 'data'=>null];
+        }
 
         
         //-------------------------------------------------------------------------------

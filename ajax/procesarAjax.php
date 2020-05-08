@@ -35,6 +35,16 @@
             $result_operation = $obj->insert_curso_Controller($data, $img_slider);
             echo json_encode($result_operation);
         }
+        elseif ($data->id === "SELECT-CURSO") {
+            # code...                     
+            $result_operation = $obj->select_curso_Controller($data);
+            echo json_encode($result_operation);
+        }
+        elseif ($data->id === "DELETE-CURSO") {
+            # code...                     
+            $result_operation = $obj->delete_curso_Controller($data);
+            echo json_encode($result_operation);
+        }
 
 
         else {
