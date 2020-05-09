@@ -15,21 +15,9 @@
         include_once("views/modules/navegacion__.php");        
     ?>
 
-    <h1>PÁGIANA DE INFORMACIÓN</h1>
+    <h4>Detalles de la página...</h4>
     
     <?php
-
-    $arr = [['nombre'=>'apple'],['nombre'=>'orange'],['nombre'=>'home']];
-
-    //var_dump($arr);
-    foreach ($arr as $value) {
-        # code...
-        //var_dump($value);
-        echo "-> {$value['nombre']}";
-
-        echo "<br>";
-    }
-
 
     echo time();
 
