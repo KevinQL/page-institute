@@ -225,14 +225,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-
                     <div class="seccion-blog pt-5">
                         <iframe width="100%" height="220px" src="https://www.youtube.com/embed/AsPg3HWIa18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="bg-warning seccion-blog__texto">
                             Ceremonia de Certificación 2016 ITEC Andahuaylas                                      
                         </div>
                     </div>
-
                 </div>
                 <div class="col-md-4">
                     <div class="seccion-blog pt-5">
