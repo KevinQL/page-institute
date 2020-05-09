@@ -5,6 +5,7 @@
     <?php
         include_once('views/modules/cdnsheader.html');
     ?>
+    <script src="./views/js/script_share.js"></script>
 
     <title>Info</title>
 </head>
@@ -29,10 +30,14 @@
         echo "<br>";
     }
 
+
+    echo time();
+
     ?>
 
-    <?php
+    <?php        
         include_once('views/modules/cdnsfooter.html');
+        include_once('views/modules/file_session_footer.html');
     ?>
 
 </body>

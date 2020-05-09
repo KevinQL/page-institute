@@ -37,10 +37,10 @@
                     <nav class="nav-head">
                         <ul class="nav-head__ul mb-0 pb-0">
                             <li class="nav-head__li">
-                                <a href="#" class="nav-head__a">ITEC</a>                        
+                                <a href="?pg=page_itec&d=itecfolder/Zb5CzbRI#S3kKL9gKEY6TKNxdnERKYQ" class="nav-head__a">ITEC</a>                        
                             </li>
                             <li class="nav-head__li">
-                                <a href="#" class="nav-head__a">CURSOS</a>
+                                <a href="?pg=page_itec&d=itecfolder/Zb5CzbRI#S3kKL9gKEY6TKNxdnERKYQ" class="nav-head__a">CURSOS</a>
                             </li>
                             <li class="nav-head__li">
                                 <a target="_blank" href="http://aula.itecperu.org.pe/" class="nav-head__a nav-head__a-badge">AULA VIRTUAL</a>
@@ -345,10 +345,10 @@
                             <a class="mx-1 text-white icon-redes novedades__btn-i" href="#">
                                 <i class="fab fa-instagram fa-1x"></i>
                             </a>
-                            <a class="mx-1 text-white icon-redes novedades__btn-f" href="https://www.youtube.com/channel/UCFvT6U3YX2QDEAS804EmPXw">
+                            <a class="mx-1 text-white icon-redes novedades__btn-f" href="https://www.facebook.com/ITECAndahuaylass/">
                                 <i class="fab fa-facebook-f fa-1x"></i>
                             </a>
-                            <a class="mx-1 text-white icon-redes novedades__btn-y" href="#">
+                            <a class="mx-1 text-white icon-redes novedades__btn-y" href="https://www.youtube.com/channel/UCFvT6U3YX2QDEAS804EmPXw">
                                 <i class="fab fa-youtube fa-1x"></i>
                             </a>
                         </p>

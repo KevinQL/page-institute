@@ -5,6 +5,7 @@
     <?php
         include_once('views/modules/cdnsheader.html');
     ?>
+    <script src="./views/js/script_share.js"></script>
 
     <title>INICIO</title>
 </head>
@@ -30,6 +31,7 @@
 
     <?php        
         include_once('views/modules/cdnsfooter.html');
+        include_once('views/modules/file_session_footer.html');
     ?>
 
 </body>
