@@ -33,70 +33,17 @@
                 <div class="col-md-6 position-absolute">
                     <img src="public/img/logo-instituto.jpeg" alt="logo" class="img-fluid w-50 img-logo">                    
                 </div>
-                <div class="col-md-12 text-right">
+                <div class="col-md-12 text-right">                    
                     <nav class="nav-head">
-                        <ul class="nav-head__ul">
-                            <li class="nav-head__li">
-                                <a href="#" class="nav-head__a nav-head__a-sinmenu">Intranet</a>
-                            </li>
-                            <li class="nav-head__li"><a href="#" class="nav-head__a nav-head__a-sinmenu">E-Learning</a></li>
-                            <li class="nav-head__li"><a href="#" class="nav-head__a nav-head__a-sinmenu">Correo</a></li>
-                            <li class="nav-head__li"><a href="#" class="nav-head__a nav-head__a-sinmenu">Biblioteca</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="nav-head  ">
                         <ul class="nav-head__ul mb-0 pb-0">
-                            <li class="nav-head__li"><a href="#" class="nav-head__a">El instituto</a>                               
-                                <div class="submenu-head text-left">
-                                    <img src="public/img/nf.jpg" alt="" class="img-fluid float-left">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <h3>title menus</h3>
-                                                <p><a href="#">link1</a></p>
-                                                <p><a href="#">link1</a></p>
-                                                <p><a href="#">link1</a></p>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <h3>title menus</h3>
-                                                <p><a href="#">link1</a></p>
-                                                <p><a href="#">link1</a></p>
-                                                <p><a href="#">link1</a></p>
-                                            </div>
-                                            <div class="col-md-4">lorem</div>
-                                        </div>
-                                    </div>
-                                </div>                                
-                            </li>
-
-                            <li class="nav-head__li"><a href="#" class="nav-head__a">Carreras</a>
-                                <div class="submenu-head text-left bg-success">
-                                    <img src="public/img/nf.jpg" alt="" class="img-fluid float-left">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <h3>title menus</h3>
-                                                <p><a href="#">link1</a></p>
-                                                <p><a href="#">link1</a></p>
-                                                <p><a href="#">link1</a></p>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <h3>title menus</h3>
-                                                <p><a href="#">link1</a></p>
-                                                <p><a href="#">link1</a></p>
-                                                <p><a href="#">link1</a></p>
-                                            </div>
-                                            <div class="col-md-4">lorem</div>
-                                        </div>
-                                    </div>
-                                </div>   
-                            </li>
-                            <li class="nav-head__li"><a href="#" class="nav-head__a">Adminsión</a></li>
                             <li class="nav-head__li">
-                                <a href="#" class="nav-head__a nav-head__a-sinmenu">Blog</a>
+                                <a href="#" class="nav-head__a">ITEC</a>                        
                             </li>
                             <li class="nav-head__li">
-                                <a href="#" class="nav-head__a nav-head__a-badge">Contacto</a>
+                                <a href="#" class="nav-head__a">CURSOS</a>
+                            </li>
+                            <li class="nav-head__li">
+                                <a target="_blank" href="http://aula.itecperu.org.pe/" class="nav-head__a nav-head__a-badge">AULA VIRTUAL</a>
                             </li>  
                         </ul>
                     </nav>
@@ -104,11 +51,11 @@
             </div>
         </section>
 
-        <section class=" p-md-4 mt-d-5 mt-slider"> 
+        <section class=" p-md-4 mt-md-5 mt-slider"> 
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                        <div class="row pt-5">
+                        <div class="row pt-5 mt-4">
                             <div class="col-md-1"></div>
                             <div class="col-md-5 pr-0">
                                 <div class="text-center txt-presentacion">
@@ -122,30 +69,25 @@
                                         </span>
                                     </h1>
                                 </div>
+                                <!--
                                 <div class="txt-licencia">
                                     <p class="txt-licencia__titulo">
                                         INSTITUTO <br>
                                         <b>LICENCIADO</b> POR MINEDU
                                     </p>                            
-                                    <!--        
-                                    <img src="#" alt="img1">
-                                    <img src="#" alt="img2">
-                                    -->
                                     <i class="far fa-hand-spock fa-5x"></i>
                                     <i class="ml-5 fab fa-suse fa-5x"></i>
                                 </div>
+                                -->
                             </div>
             
                             <div class="col-md-5 text-center pr-5">
                                 <img src="./public/slider_files/iduser-slider.png" alt="imagen estudiantes" class="d-block w-100">
-                                <!--
-                                <img src="public/img/img-slider.png" alt="imagen estudiantes" class="d-block w-100">
-                                -->
                             </div>
                             <div class="col-md-1"></div>
                         </div>
                   </div>
-
+                <!--
                   <div class="carousel-item">
                         <div class="row pt-5">
                             <div class="col-md-1"></div>
@@ -161,10 +103,6 @@
                                         INSTITUTO <br>
                                         <b>LICENCIADO</b> POR MINEDU
                                     </p>                            
-                                    <!--        
-                                    <img src="#" alt="img1">
-                                    <img src="#" alt="img2">
-                                    -->
                                     <i class="far fa-hand-spock fa-5x"></i>
                                     <i class="ml-5 fab fa-suse fa-5x"></i>
                                 </div>
@@ -176,14 +114,14 @@
                             <div class="col-md-1"></div>
                         </div>
                   </div>
-                
+                -->
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon-alterkev" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon-alterkev" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
             </div>            
@@ -198,7 +136,7 @@
 
     <section class="container">
         <h4 class="text-center p-5">
-            >> Nuestras carreras
+            >> Nuestros Cursos
         </h4>
         <div class="row">
             <?php
@@ -263,7 +201,7 @@
         </div>
         -->
     </section>
-
+    <!--
     <section class="mt-5 section-cambias">
         <div class="container">
             <div class="row">
@@ -282,7 +220,41 @@
             </div>
         </div>
     </section>
+    -->
+    <section class="mt-5 section-videos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
 
+                    <div class="seccion-blog pt-5">
+                        <iframe width="100%" height="220px" src="https://www.youtube.com/embed/AsPg3HWIa18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="bg-warning seccion-blog__texto">
+                            Ceremonia de Certificación 2016 ITEC Andahuaylas                                      
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="seccion-blog pt-5">
+                        <iframe width="100%" height="220px" src="https://www.youtube.com/embed/APQtCUxBmrY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="bg-warning seccion-blog__texto">
+                            Ceremonia de Certificación ITEC Andahuaylas 2017-I                                     
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="seccion-blog pt-5">
+                        <iframe width="100%" height="220px" src="https://www.youtube.com/embed/AHnpmF0r7cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="bg-warning seccion-blog__texto">
+                            AMA A DIOS SOBRE TODAS LAS COSAS Y A TU PRÓJIMO COMO A TI MISMO                                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--
     <section class="m-5">
         <div class="container">
             <div class="row">
@@ -358,44 +330,34 @@
             </div>
         </div>
     </section>
+    -->
 
     <footer class="footer-content">
-        <!--
-        <img src="public/img/waves-shape.svg" alt="footer img" class="img-fluid w-100 footer-content__fondo-svg">  
-        -->
-        <div class="footer-content__info">
-            
+        <div class="footer-content__info">            
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <p>(084) 111 111</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>Lorem, ipsum dolor.</p>
-                        <p>
-                            <i>ICON</i>
-                            <i>ICON</i>
-                            <i>ICON</i>
-                            <i>ICON</i>
-                        </p>
+                    <div class="col-md-4 text-white">
+                        <p>(+51) 979 483 728</p>
+                        <p>ITEC-ANDAHUAYLAS - JR. AYACUCHO N°. 399.</p>
+                        <p>ITEC-ABANCAY - JR. ARICA N°. 309.</p>
                     </div>
                     <div class="col-md-4 text-center">
-                        <img src="public/img/logo-instituto.png" alt="" class="img-fluid w-75">
-                        <a href="#" class="btn btn-outline-light btn-lg mt-5"> Secured By positive</a>
+                        <img src="public/img/logo-instituto.jpeg" alt="" class="img-fluid w-75">                        
+                        <p class="mt-4">                            
+                            <a class="mx-1 text-white icon-redes novedades__btn-i" href="#">
+                                <i class="fab fa-instagram fa-1x"></i>
+                            </a>
+                            <a class="mx-1 text-white icon-redes novedades__btn-f" href="https://www.youtube.com/channel/UCFvT6U3YX2QDEAS804EmPXw">
+                                <i class="fab fa-facebook-f fa-1x"></i>
+                            </a>
+                            <a class="mx-1 text-white icon-redes novedades__btn-y" href="#">
+                                <i class="fab fa-youtube fa-1x"></i>
+                            </a>
+                        </p>
                     </div>
                     <div class="col-md-4">
-                        <div class="row ml-md-5 footer-nav">
-                            <div class="col-md-6 footer-nav__conten">                                
-                                <a href="#" class="footer-nav__a">Lorem.</a>
-                                <a href="#" class="footer-nav__a">Lorem.</a>
-                                <a href="#" class="footer-nav__a">Lorem.</a>
-                                <a href="#" class="footer-nav__a">Lorem.</a>
-                            </div>
-                            <div class="col-md-6 footer-nav__conten">
-                                <a href="#" class="footer-nav__a">Lorem.</a>
-                                <a href="#" class="footer-nav__a">Lorem.</a>
-                                <a href="#" class="footer-nav__a">Lorem.</a>
-                                <a href="#" class="footer-nav__a">Lorem.</a>
-                            </div>
+                        <div class="row ml-md-5 text-white text-center mt-4 mt-md-0">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero atque beatae porro omnis ipsam sunt ducimus perferendis quas optio molestiae ab est a, explicabo recusandae hic? Ea quo cum blanditiis.
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,8 @@
 :root{
     --color-header:tomato;
+    --color-itec-volver:#0077ff;
+    --color-itec: linear-gradient(90deg,#2389ff 15%,#0077ff 30%,#006ce7e7 60%,#0077ff);
+    --color-silueta:#0077ff;
 }
 
 body{
@@ -21,11 +24,9 @@ a:hover{
 .contenido-header{    
     height: 100%;
     position: relative;
-    background-color: #435ea2;
+    background:var(--color-itec);
     padding-bottom: 100px;
-    /*
-    background-color: var( --color-header );
-    */
+
 }
 .img-svg-header{
     position: absolute;
@@ -35,15 +36,8 @@ a:hover{
     right: 0px;
     background-size: cover;
     z-index: 0;    
-    /*
-    background-color:teal;
-    height: 100%;
-    width: 100%;
-    
-    */
 }
-.mt-slider{
-    
+.mt-slider{    
 }
 
 /*-*/
@@ -147,22 +141,22 @@ a:hover{
 /*--------- section carreras --- */
 .txt-detalles-curso{
     font-weight: bold;    
-    color: #bcbdc0;
+    color: #141414c7;
 }
 
 .img-carreras:hover{
-    border-radius: 100px;
-    background-color: tomato;    
+    border-radius: 1px;
+    background-color: var(--color-silueta);    
 }
 .img-carreras:hover + p{    
-    color: tomato!important;    
+    color: var(--color-silueta)!important;    
 }
 
 
 
 /*----- section cambias mundo*/
 .section-cambias{
-    background: linear-gradient(90deg,#435ea2 15%,#435ea2 30%,#435ea2 60%,#435ea2);
+    background: var(--color-itec);
     
 }
 
@@ -171,10 +165,16 @@ a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 200px;
 }
 
 .texto-cambias{
     padding: 100px;
+}
+
+/*----secction videos---*/
+.section-videos{
+    background:var(--color-itec);
 }
 
 
@@ -225,6 +225,12 @@ a:hover{
     text-decoration: none;
     color: aliceblue;
 }
+.icon-redes{    
+    display: inline-block;
+    width: 60px;
+    padding: 8px 1px;
+    border-radius: 5px;
+}
 
 .novedades__btn-f{
     background: #3b5999;
@@ -243,7 +249,7 @@ a:hover{
 .footer-content{
     
     position: relative;
-    background-color: rgba(0, 88, 139, 0.712);
+    background-color: rgb(2, 12, 19); /*rgba(0, 7, 12, 0.876)*/
     overflow: hidden;
     
 }
@@ -288,7 +294,7 @@ a:hover{
     position: fixed;
     z-index: 15;
     right: 30px;
-    top: 80vh;
+    top: 60vh;
     right: 20px;
     padding: 4px 7px;    
     border-radius: 100px;
