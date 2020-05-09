@@ -360,10 +360,12 @@
     </section>
 
     <footer class="footer-content">
+        <!--
         <img src="public/img/waves-shape.svg" alt="footer img" class="img-fluid w-100 footer-content__fondo-svg">  
+        -->
         <div class="footer-content__info">
             
-            <div class="container pt-5">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <p>(084) 111 111</p>

@@ -18,12 +18,10 @@
 
     <!-- CUADR DE VIENDENIDA AL USUARIO-->
     <div class="jumbotron container mt-5">
-        <h1 class="display-3">Bienvenido, <?= $_SESSION['data']['user'] ?>!</h1>    
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <h1 class="display-3">Bienvenido, <?= $_SESSION['data']['user'] ?>!</h1>           
+        <hr class="my-4">        
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Más información</a>
+            <a class="btn btn-primary btn-lg" target="_blank" href="?pg=page_itec&d=itecfolder/Zb5CzbRI#S3kKL9gKEY6TKNxdnERKYQ"role="button">VER PÁGINA WEB</a>
         </p>
 
     </div>
