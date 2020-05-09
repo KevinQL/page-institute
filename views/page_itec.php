@@ -210,7 +210,7 @@
                         echo "
                             <div class='col-md-3 text-center'>
                                 <img src='./public/curso_files/iduser-{$value[url_img]}' alt='imgen estudinarte' class='img-fluid  img-carreras'>
-                                <p class='text-center text-capitalize lead'>
+                                <p class='text-center text-capitalize lead txt-detalles-curso'>
                                     {$value[nombre_curso]} <br>
                                     {$value[fecha_txt]} <br>
                                     $/. {$value[costo]} Soles<br>

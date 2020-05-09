@@ -145,6 +145,11 @@ a:hover{
 }
 
 /*--------- section carreras --- */
+.txt-detalles-curso{
+    font-weight: bold;    
+    color: #bcbdc0;
+}
+
 .img-carreras:hover{
     border-radius: 100px;
     background-color: tomato;    
