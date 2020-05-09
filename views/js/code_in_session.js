@@ -203,10 +203,10 @@ function execute_curso_select(txt_search){
                     <td>${element.url_img}</td>
                     <td class="text-center">
                         <button class="btn btn-danger" onclick="execute_curso_delete('${element.id_curso}')"><i class="far fa-trash-alt"></i></button> 
-                        <button class="btn btn-success" onclick=""><i class="fas fa-edit"></i></button> 
-                    </td>
-                </tr>                     
-                `;
+                        </td>
+                        </tr>                     
+                        `;
+                //<button class="btn btn-success" onclick=""><i class="fas fa-edit"></i></button> 
             })
         }
         tabla.innerHTML=RES_HTML;

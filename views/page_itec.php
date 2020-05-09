@@ -18,7 +18,10 @@
 
   </head>
   <body>
-    
+    <?php
+        $obj = new webItecController();
+    ?>
+
 
     <header class="pt-5 contenido-header">
         <!--
@@ -28,7 +31,7 @@
         <section class="container">
             <div class="row">
                 <div class="col-md-6 position-absolute">
-                    <img src="public/img/logo-instituto.png" alt="logo" class="img-fluid w-50 img-logo">                    
+                    <img src="public/img/logo-instituto.jpeg" alt="logo" class="img-fluid w-50 img-logo">                    
                 </div>
                 <div class="col-md-12 text-right">
                     <nav class="nav-head">
@@ -112,8 +115,7 @@
                                     <h1 class="txt-presentacion__titulo">
                                         Inicio de Clase <br>
                                         <span class="txt-presentacion__titulo-decorado  d-inline-block">
-                                            <?php                                        
-                                                $obj = new webItecController();
+                                            <?php                                                                                        
                                                 echo $obj->obtener_fecha_slider_Controller();
                                             ?>
                                             <!--11 de Marzo-->
@@ -199,12 +201,35 @@
             >> Nuestras carreras
         </h4>
         <div class="row">
+            <?php
+                $cursos_data = $obj->obtener_dataCurso_Controller();
+                if($cursos_data['eval']){
+                    foreach ($cursos_data['data'] as $key => $value) {
+                        # code...
+                        //echo "$key => {$value['nombre_curso']} <br>";
+                        echo "
+                            <div class='col-md-3 text-center'>
+                                <img src='./public/curso_files/iduser-{$value[url_img]}' alt='imgen estudinarte' class='img-fluid  img-carreras'>
+                                <p class='text-center text-capitalize lead'>
+                                    {$value[nombre_curso]} <br>
+                                    {$value[fecha_txt]} <br>
+                                    $/. {$value[costo]} Soles<br>
+                                </p>
+                            </div>                        
+                        ";
+                    }
+
+                }else{
+                    echo 'No hay cursos aún...';
+                }
+            ?>
+            <!--
             <div class="col-md-3 text-center">
                 <img src="./public/curso_files/iduser-estadisc1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
                 <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
-                <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
+                <img src="public/curso_files/imagen.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
                 <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
             <div class="col-md-3 text-center">
@@ -215,7 +240,9 @@
                 <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
                 <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
+            -->
         </div>
+        <!--
         <div class="row">
             <div class="col-md-3 text-center">
                 <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
@@ -234,6 +261,7 @@
                 <p class="text-center"> Lorem ipsum dolor sit amet consectetur.</p>
             </div>
         </div>
+        -->
     </section>
 
     <section class="mt-5 section-cambias">
@@ -375,7 +403,12 @@
     </footer>
 
 
-
+    
+    <div class="whatsapp">
+        <a href="#" class="redes-link" data-numero="51916331094" data-mensaje="Hola, me podria enviar información?" onclick="whatsapp_exe()">
+            <i class="fab fa-whatsapp fa-3x"></i>
+        </a>
+    </div>
 
 
     <!-- Optional JavaScript -->
@@ -383,5 +416,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+    <!--SCRIPT ME-->
+    <script src="./public/js/script_itec.js"></script>
+
   </body>
 </html>

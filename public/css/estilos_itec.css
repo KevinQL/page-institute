@@ -146,9 +146,10 @@ a:hover{
 
 /*--------- section carreras --- */
 .img-carreras:hover{
+    border-radius: 100px;
     background-color: tomato;    
 }
-.img-carreras:hover + p{
+.img-carreras:hover + p{    
     color: tomato!important;    
 }
 
@@ -275,6 +276,28 @@ a:hover{
     text-decoration: none;
 }
 
+
+/*--------wsp--------*/
+.whatsapp{
+    background-color: #25d365;    
+    position: fixed;
+    z-index: 15;
+    right: 30px;
+    top: 80vh;
+    right: 20px;
+    padding: 4px 7px;    
+    border-radius: 100px;
+}
+.redes-link{
+    color: white;
+    text-decoration: none;    
+    background-color: rgba(255, 255, 0, 0.013);        
+    display: inline-block;
+    padding: 7px;
+    border-radius: 100px;
+    height: 90%;
+    text-align: center;
+}
 
 
 /*---------------adicionales ----------*/

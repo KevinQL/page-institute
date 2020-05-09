@@ -18,7 +18,7 @@
     
     <?php
 
-    $arr = [['nombre'=>'kevin'],['nombre'=>'blanky'],['nombre'=>'julio']];
+    $arr = [['nombre'=>'apple'],['nombre'=>'orange'],['nombre'=>'home']];
 
     //var_dump($arr);
     foreach ($arr as $value) {

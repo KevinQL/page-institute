@@ -17,6 +17,15 @@
             return $resModal;
         }
 
+        /**
+         * 
+         */
+        public function obtener_dataCurso_Controller(){
+            $resModal = self::obtener_dataCurso_Model();
+            return $resModal;
+            //return [['nombre'=>'contabilidad'],['nombre'=>'admi'],['nombre'=>'sistemas']];
+        }
+
         //------------------------------------------------------------------------------
 
         /**
