@@ -26,8 +26,8 @@ var isMobile = {
 };
 
 function whatsapp_exe() {
-    var text = "hola mundo";
-    var phone = "51916331094";
+    var text = "¿¡Hola! Buen día por favor me podría brindar más información de los cursos?";
+    var phone = "51979483728";
     var message = encodeURIComponent(text);
     if (isMobile.any()) {
         //mobile device

@@ -1,5 +1,5 @@
 //serrar session
-let minute = 1;
+let minute = 20;
 let limitTime = 1000 * 60 * minute;
 setTimeout(() => {
     //location.href = "http://localhost/itec/itec_admin/?pg=salir_sistema"

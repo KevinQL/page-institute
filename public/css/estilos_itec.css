@@ -14,10 +14,14 @@ a:hover{
     color: white;
 }
 
-/*---img*/
+/*---img LOGO*/
 .img-logo{
-    position: absolute;
+    position: relative;
     z-index: 1;
+        
+    padding: 10PX;
+    top: -18PX;
+    border-radius: 20PX;
 }
 
 /*----nav---*/

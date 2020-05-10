@@ -14,7 +14,7 @@
     <!-- Styles me -->
     <link rel="stylesheet" href="public/css/estilos_itec.css">
 
-    <title>Hello, world!</title>
+    <title>ITEC - ANDAHUAYLAS</title>
 
   </head>
   <body>
@@ -43,7 +43,7 @@
                                 <a href="?pg=page_itec&d=itecfolder/Zb5CzbRI#S3kKL9gKEY6TKNxdnERKYQ" class="nav-head__a">CURSOS</a>
                             </li>
                             <li class="nav-head__li">
-                                <a target="_blank" href="http://aula.itecperu.org.pe/" class="nav-head__a nav-head__a-badge">AULA VIRTUAL</a>
+                                <a target="_blank" href="http://www.itecandahuaylas.com/campus/index.php" class="nav-head__a nav-head__a-badge">AULA VIRTUAL</a>
                             </li>  
                         </ul>
                     </nav>
@@ -342,20 +342,20 @@
                     <div class="col-md-4 text-center">
                         <img src="public/img/logo-instituto.jpeg" alt="" class="img-fluid w-75">                        
                         <p class="mt-4">                            
-                            <a class="mx-1 text-white icon-redes novedades__btn-i" href="#">
+                            <a class="mx-1 text-white icon-redes novedades__btn-i" target="_blank" href="https://www.instagram.com/itecandahuaylas/?hl=es-la">
                                 <i class="fab fa-instagram fa-1x"></i>
                             </a>
-                            <a class="mx-1 text-white icon-redes novedades__btn-f" href="https://www.facebook.com/ITECAndahuaylass/">
+                            <a class="mx-1 text-white icon-redes novedades__btn-f" target="_blank" href="https://www.facebook.com/ITECAndahuaylass/">
                                 <i class="fab fa-facebook-f fa-1x"></i>
                             </a>
-                            <a class="mx-1 text-white icon-redes novedades__btn-y" href="https://www.youtube.com/channel/UCFvT6U3YX2QDEAS804EmPXw">
+                            <a class="mx-1 text-white icon-redes novedades__btn-y" target="_blank" href="https://www.youtube.com/channel/UCFvT6U3YX2QDEAS804EmPXw">
                                 <i class="fab fa-youtube fa-1x"></i>
                             </a>
                         </p>
                     </div>
                     <div class="col-md-4">
                         <div class="row ml-md-5 text-white text-center mt-4 mt-md-0">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero atque beatae porro omnis ipsam sunt ducimus perferendis quas optio molestiae ab est a, explicabo recusandae hic? Ea quo cum blanditiis.
+                            ITEC Andahuaylas es la iniciativa del futuro, orientada a ofrecer la máxima calidad en la educación superior tecnológica en la la región de Apurímac.
                         </div>
                     </div>
                 </div>
