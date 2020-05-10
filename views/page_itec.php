@@ -81,8 +81,8 @@
                                 -->
                             </div>
             
-                            <div class="col-md-5 text-center pr-5">
-                                <img src="./public/slider_files/iduser-slider.png" alt="imagen estudiantes" class="d-block w-100">
+                            <div class="col-md-5 text-center pr-2">
+                                <img src="./public/slider_files/iduser-slider.png" alt="imagen estudiantes" class="img-fluid w-100 img-slider_1">
                             </div>
                             <div class="col-md-1"></div>
                         </div>

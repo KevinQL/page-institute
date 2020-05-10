@@ -16,11 +16,10 @@ a:hover{
 
 /*---img LOGO*/
 .img-logo{
-    position: relative;
+    position: absolute;
     z-index: 1;
-        
-    padding: 10PX;
-    top: -18PX;
+    top:-30px;
+    max-width: 310px;
     border-radius: 20PX;
 }
 
@@ -29,7 +28,7 @@ a:hover{
     height: 100%;
     position: relative;
     background:var(--color-itec);
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 
 }
 .img-svg-header{
@@ -139,7 +138,10 @@ a:hover{
 .txt-licencia__titulo{
     color: whitesmoke;
     font-size: 1em;    
+}
 
+.img-slider_1{
+    max-width: 500px;
 }
 
 /*--------- section carreras --- */
