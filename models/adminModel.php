@@ -17,7 +17,7 @@
                         user = '{$data->user}',
                         password = '{$data->password}',
                         estado = {$data->estado},
-                        tipo_usuario = 1
+                        tipo_usuario = 0
                         ";
             $result_query = self::ejecutar_una_consulta($query);
             if($result_query->rowCount() >= 1){
