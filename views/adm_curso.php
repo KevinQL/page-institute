@@ -24,12 +24,12 @@
                 <div class="form-group">
                     <label for="txt_carrera">NOMBRE CURSO</label>
                     <input type="text" class="form-control" id="txt_carrera" aria-describedby="carreraHelp" placeholder="CONTABILIDAD Y FINANZAS...">
-                    <small id="carreraHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <small id="carreraHelp" class="form-text text-muted"></small>
                 </div>
                 <div class="form-group">
                     <label for="txt_fecha">FECHA DE INICIO</label>
                     <input type="text" class="form-control" id="txt_fecha" aria-describedby="fechaHelp" placeholder="11 DE MAYO">
-                    <small id="fechaHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <small id="fechaHelp" class="form-text text-muted"></small>
                 </div>
                 <div class="form-group">
                     <label class="control-label">COSTO</label>
@@ -42,14 +42,14 @@
                             <div class="input-group-append">
                                 <span class="input-group-text">SOLES</span>
                             </div>
-                            <small id="costoHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                            <small id="costoHelp" class="form-text text-muted"></small>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="img_curso">Imagen Carrera</label>
+                    <label for="img_curso">IMAGEN CURSO</label>
                     <input type="file" class="form-control-file" id="img_curso" aria-describedby="fileHelp">
-                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                    <small id="fileHelp" class="form-text text-muted"></small>
                 </div>
                 <div class="form-group">
                     <label for="ordenSelect">ORDEN</label>
@@ -75,8 +75,8 @@
 
     <section class="container">
         <div class="row">
-            <div class="col-md-12 py-3 text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis!
+            <div class="col-md-12 py-3 text-center display-5">
+                REGISTRO DE CURSOS
             </div>
 
             <div class="col-md-12">
