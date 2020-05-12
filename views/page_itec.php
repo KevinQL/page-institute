@@ -147,13 +147,18 @@
                             //echo "$key => {$value['nombre_curso']} <br>";
                             echo "
                                 <div class='col-md-3 text-center'>
-                                    <img src='./public/curso_files/iduser-{$value[url_img]}' alt='imgen estudinarte' class='img-fluid  img-carreras'>
-                                    <p class='text-center text-capitalize lead txt-detalles-curso'>
-                                        {$value[nombre_curso]} <br>
-                                        {$value[fecha_txt]} <br>
-                                        $/. {$value[costo]} Soles<br>
-                                    </p>
-                                </div>                        
+                                    <img src='./public/curso_files/iduser-{$value[url_img]}' alt='imgen estudinarte' class='img-fluid img-carreras'>
+                
+                                    <div class='pb-2 px-2 pt-2 mt-1 curso-detalles'>
+                                        <h5>{$value[nombre_curso]}</h5>
+                                        <h3>{$value[fecha_txt]} </h3>
+                                        <hr>
+                                        <div class='d-flex justify-content-between align-items-end'>
+                                            <P class='pb-0 mb-0 curso-detalles__precio'>S/. {$value[costo]} Soles</P>                            
+                                            <a target='_blank' href='https://wa.link/dxrbbw' class='btn btn-primary d-inline-block'>COMPRAR</a>
+                                        </div>
+                                    </div>
+                                </div>                      
                             ";
                         }
 
@@ -161,30 +166,21 @@
                         echo 'No hay cursos aún...';
                     }
                 ?>
-                <!--
-                <div class="col-md-3 text-center">
-                    <img src="./public/curso_files/iduser-estadisc1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
-                    <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="public/curso_files/imagen.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
-                    <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
-                    <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid  img-carreras">
-                    <p class="text-center text-capitalize text-muted"> Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                -->
             </div>
             <!--
             <div class="row">
                 <div class="col-md-3 text-center">
-                    <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
-                    <p class="text-center"> Lorem ipsum dolor sit amet consectetur.</p>
+                    <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid img-carreras">
+
+                    <div class="pb-2 px-2 mt-3 curso-detalles">
+                        <h5>Etsadistica y contabilidad para las empresas</h5>
+                        <h3>11 de marzo</h3>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-end">
+                            <P class="pb-0 mb-0 curso-detalles__precio">S/. 190 Soles</P>                            
+                            <a href="#" class="btn btn-primary d-inline-block">COMPRAR</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3 text-center">
                     <img src="public/img/estudent-1.png" alt="imgen estudinarte" class="img-fluid">
@@ -199,7 +195,7 @@
                     <p class="text-center"> Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
-            -->
+        -->
         </section>
         <!--
         <section class="mt-5 section-cambias">

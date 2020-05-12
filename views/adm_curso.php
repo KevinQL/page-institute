@@ -36,7 +36,7 @@
                     <div class="form-group">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text">$/</span>
+                                <span class="input-group-text">S/</span>
                             </div>
                             <input type="text" class="form-control" id="txt_costo" aria-label="Amount (to the nearest soles)" placeholder="190.90" aria-describedby="costoHelp">
                             <div class="input-group-append">
@@ -63,6 +63,12 @@
                         <option>7</option>
                         <option>8</option>
                         <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
                     </select>
                 </div>
                 <div class="lead form-group">

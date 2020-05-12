@@ -3,6 +3,7 @@
     --color-itec-volver:#0077ff;
     --color-itec: linear-gradient(90deg,#2389ff 15%,#0077ff 30%,#006ce7e7 60%,#0077ff);
     --color-silueta:#0077ff;
+    --color-curso-detalles:#0077ff31;
 }
 
 body{
@@ -159,6 +160,20 @@ a:hover{
 }
 
 
+.curso-detalles{    /*contenedor pardre - div*/
+    background: #F7F7F7;
+}
+.img-carreras:hover + .curso-detalles{
+    background: rgb(241, 241, 241);
+}
+.curso-detalles:hover{
+    background: rgb(241, 241, 241);
+}
+.curso-detalles__precio{ 
+    color: #644d00;
+    font-weight: bold;
+    font-size: 1.1em;
+}
 
 /*----- section cambias mundo*/
 .section-cambias{
