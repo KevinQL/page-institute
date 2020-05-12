@@ -26,6 +26,8 @@
         <header class="pt-5 contenido-header">
             <!--
             -->
+            
+
             <img src="public/img/waves-shape.svg" alt="jaja" class="img-fluid w-100 img-svg-header">
             
             <section class="container">
@@ -131,6 +133,10 @@
                 <div class="vacio-header">            
                 </div>
             -->
+            <video src="./public/video/video-itec.mp4" autoplay loop onloadedmetadata="this.muted=true" poster="./public/slider_files/iduser-slider.png" class="video-portada" >        
+                <img src="./public/slider_files/iduser-slider.png" alt="Video no soportado">
+                Su navegador no soporta contenido multimedia.
+            </video>
                 
         </header>
 

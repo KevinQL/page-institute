@@ -28,9 +28,19 @@ a:hover{
 .contenido-header{    
     height: 100%;
     position: relative;
-    background:var(--color-itec);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.541), #3493ff13);    
     padding-bottom: 200px;
-
+    /* z-index: 0; */
+    overflow: hidden;
+}
+.video-portada{ /*VIDEO STYLES*/    
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -5;
 }
 .img-svg-header{
     position: absolute;
