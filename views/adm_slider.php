@@ -24,12 +24,12 @@
                 <div class="form-group">
                     <label for="txt_fecha">FECHA DE INICIO</label>
                     <input type="text" class="form-control txt_fecha" id="txt_fecha" aria-describedby="fechaHelp" placeholder="11 DE MAYO">
-                    <small id="fechaHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <small id="fechaHelp" class="form-text text-muted"></small>
                 </div>
                 <div class="form-group">
-                    <label for="img_slider">File input</label>
+                    <label for="img_slider">AGREGAR IMAGEN</label>
                     <input type="file" class="form-control-file img_slider" id="img_slider" aria-describedby="fileHelp">
-                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                    <small id="fileHelp" class="form-text text-muted"></small>
                 </div>
                 <div class="lead form-group">
                     <button class="btn btn-primary btn-lg d-block w-100" onclick="execute_sliderInsert()">Guardar Slider</button>                    
