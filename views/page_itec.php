@@ -42,7 +42,7 @@
                                     <a href="?pg=page_itec&d=itecfolder/Zb5CzbRI#S3kKL9gKEY6TKNxdnERKYQ" class="nav-head__a">ITEC</a>                        
                                 </li>
                                 <li class="nav-head__li">
-                                    <a href="?pg=page_itec&d=itecfolder/Zb5CzbRI#S3kKL9gKEY6TKNxdnERKYQ" class="nav-head__a">CURSOS</a>
+                                    <a href="#seccion-cursos" class="nav-head__a">CURSOS</a>
                                 </li>
                                 <li class="nav-head__li">
                                     <a target="_blank" href="http://www.itecandahuaylas.com/campus/index.php" class="nav-head__a nav-head__a-badge">AULA VIRTUAL</a>
@@ -140,7 +140,7 @@
                 
         </header>
 
-        <section class="container">
+        <section class="container" id="seccion-cursos">
             <h4 class="text-center p-5">
                 >> Nuestros Cursos
             </h4>
