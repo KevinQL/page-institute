@@ -62,8 +62,8 @@
                                     <div class="col-md-5 pr-0">
                                         <div class="text-center txt-presentacion">
                                             <h1 class="txt-presentacion__titulo">
-                                                Inicio de Clase <br>
-                                                <span class="txt-presentacion__titulo-decorado  d-inline-block">
+                                                Inicio de Clases <br>
+                                                <span class="txt-presentacion__titulo-decorado  d-inline-block pr-1 pb-1">
                                                     <?php                                                                                        
                                                         echo $obj->obtener_fecha_slider_Controller();
                                                     ?>
@@ -133,7 +133,7 @@
                 <div class="vacio-header">            
                 </div>
             -->
-            <video src="./public/video/video-itec.mp4" autoplay loop onloadedmetadata="this.muted=true" poster="./public/slider_files/iduser-slider.png" class="video-portada" >        
+            <video src="./public/video/video-itec.mp4" autoplay loop onloadedmetadata="this.muted=true" class="video-portada" >        
                 <img src="./public/slider_files/iduser-slider.png" alt="Video no soportado">
                 Su navegador no soporta contenido multimedia.
             </video>
@@ -160,7 +160,7 @@
                                         <h3>{$value[fecha_txt]} </h3>
                                         <hr>
                                         <div class='d-flex justify-content-between align-items-end'>
-                                            <P class='pb-0 mb-0 curso-detalles__precio'>S/. {$value[costo]} Soles</P>                            
+                                            <p class='pb-0 mb-0 curso-detalles__precio'>S/. {$value[costo]} Soles</p>                            
                                             <a target='_blank' href='https://wa.link/dxrbbw' class='btn btn-primary d-inline-block'>COMPRAR</a>
                                         </div>
                                     </div>
