@@ -178,6 +178,10 @@ a:hover{
 .curso-detalles:hover{
     background: rgb(241, 241, 241);
 }
+.curso-fecha{
+    background: #fc0002;
+    color: #fefe01;
+}
 .curso-detalles__precio{ 
     color: #644d00;
     font-weight: bold;

@@ -157,7 +157,7 @@
                 
                                     <div class='pb-2 px-2 pt-2 mt-1 curso-detalles'>
                                         <h5>{$value[nombre_curso]}</h5>
-                                        <h3 class='bg-danger text-warning py-2'>{$value[fecha_txt]} </h3>
+                                        <h3 class='curso-fecha py-2'>{$value[fecha_txt]} </h3>
                                         
                                         <div class='d-flex justify-content-between align-items-end'>
                                             <p class='pb-0 mb-0 curso-detalles__precio'>S/.{$value[costo]} <small>Soles</small></p>                            
