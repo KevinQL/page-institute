@@ -162,15 +162,6 @@ a:hover{
     color: #141414c7;
 }
 
-.img-carreras:hover{
-    border-radius: 1px;
-    background-color: var(--color-silueta);    
-}
-.img-carreras:hover + p{    
-    color: var(--color-silueta)!important;    
-}
-
-
 .curso-detalles{    /*contenedor pardre - div*/
     background: #F7F7F7;
 }
