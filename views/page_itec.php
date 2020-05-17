@@ -132,10 +132,13 @@
                 vacio adicional
                 <div class="vacio-header">            
                 </div>
-            -->
             <video src="./public/video/video-itec.mp4" autoplay loop onloadedmetadata="this.muted=true" class="video-portada" >        
                 <img src="./public/slider_files/iduser-slider.png" alt="Video no soportado">
                 Su navegador no soporta contenido multimedia.
+            </video>
+            -->
+            <video autoplay loop muted class="video-portada"> 
+                <source src="./public/video/video-itec.mp4" type='video/mp4'> 
             </video>
                 
         </header>

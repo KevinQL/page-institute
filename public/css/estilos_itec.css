@@ -137,8 +137,9 @@ a:hover{
     font-size: 3.2em;
 }
 .txt-presentacion__titulo-decorado{
-    background-color: #0065A8;/* 2874A6 - 0065A8*/
+    /*background-color: #0065A8; 2874A6 - 0065A8*/
     /*hacer decorado rombo - yellowgreen*/
+    background-color: #08da0c;
 }
 
 /*--- texto presentacion licenciado ----*/
