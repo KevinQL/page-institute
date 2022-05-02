@@ -2,7 +2,7 @@
 # IMPLEMENTACIÓN DE UNA PAGINA WEB PARA LA ITEC 
 
 GRUPO DE PROYECTO
-- Bach. KEVIN QUISPE LIMA. Programador web
+- Ing. KEVIN QUISPE LIMA. Programador web
 
 Trabajo desarrollado para el instituto tecnológico de andahuaylas, donde se llego a desarrollar una plataforma web con las siguientes funcionalidades. Un gestor de contenidos para las publicacion de los distintos cursos que ofreece el instituto.
 
